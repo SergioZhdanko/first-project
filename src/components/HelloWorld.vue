@@ -10,7 +10,6 @@
       <button @click="calcualte('*')">*</button>
       <button @click="calcualte('%')">%</button>
       <button @click="calcualte('^')">^</button>
-      <button @click="calcualte('#')">^</button>
     </div>
   </div>
 </template>
@@ -46,9 +45,6 @@ export default {
           break;
         case "^":
           this.result = Math.pow(this.operand1, this.operand2);
-          break;
-        case "#":
-          this.result = Math.pow(this.operand1, this.operand2); // проверка репозитория
           break;
       }
     },
